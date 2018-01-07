@@ -1,0 +1,55 @@
+li {
+	display: inline;
+	text-align: center;
+	font-size: 30px;
+	word-spacing: 60px;
+}
+
+h1 {
+	font-family: sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+
+}
+
+a:hover {
+	color: limegreen;
+	
+}
+
+.headers {
+	text-align: center;
+}
+
+.form {
+	display: block;
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+input {
+	color: green;
+	background-color: black;
+	}
+
+
+
+textarea {
+	background-color: black;
+	color: green;
+	 }
+
+.navbar {
+	text-align: center;
+}
+
