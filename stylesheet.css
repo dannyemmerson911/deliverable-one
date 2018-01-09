@@ -1,3 +1,18 @@
+@font-face {
+	font-family: jaapokki-regular;
+	src: url('/Fonts/jaapokki-Regular.otf') 
+}
+
+@font-face {
+	font-family: paralines-regular;
+	src: url('/Fonts/Paralines-Regular.otf'); 
+}
+
+
+body {
+	background-color: black;
+}
+
 li {
 	display: inline;
 	text-align: center;
@@ -6,23 +21,30 @@ li {
 }
 
 h1 {
-	font-family: sans-serif;
+	font-family: jaapokki-regular;
+	font-size: 65px;
+	margin: 5px 1px;
+	clear: right;
 
+	}
+
+p {
+	font-family: jaapokki-regular;
+	font-size: 20px;
+	color: white;
 }
 
-a {
-	text-decoration: none;
-	color: blue;
-
-}
 
 a:hover {
-	color: limegreen;
+	color: white;
 	
 }
 
 .headers {
 	text-align: center;
+	margin: 5px;
+	color: white;
+
 }
 
 .form {
@@ -50,6 +72,77 @@ textarea {
 	 }
 
 .navbar {
+	text-align: right;
+}
+
+.code {
+	font-style: italic;
+	display: inline;
+	font-size: 20px;
+	color: silver;
+}
+
+
+
+#contact, a {
+	font-family: jaapokki-regular;
+	font-size: 20px;
+	color: rgb(245, 67, 63);
+}
+
+#contact:hover {
+	color: white;
+}
+
+h2 {
+	font-family: jaapokki-regular;
+	font-size: 30px;
+	color: white;
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: silver;
+	font-family: paralines-regular;
+	font-size: 25px;
+	
+
+
+}
+
+.dje {
+	color: rgb(245, 67, 63); 
+	border: 5px white solid;
+	border-radius: 30px;
+
+}
+
+.homeImagesContainer {
+	display: flex;
+	flex-direction: row;
+
+	height: 250px;
+	justify-content: space-around;
+
+
+
+}
+
+
+
+img {
+	border-radius: 15px;
+	width: 350px;
+	display: inline-block;
+	border: 5px solid rgb(245, 67, 63);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+
+}
