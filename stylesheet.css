@@ -13,11 +13,62 @@ body {
 	background-color: black;
 }
 
-li {
+
+
+.navbar li {
 	display: inline;
 	text-align: center;
 	font-size: 30px;
 	word-spacing: 60px;
+}
+
+li {
+	color: white;
+
+}
+
+.flex-outer li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: jaapokki-regular;
+	font-size: 20px;
+	color: rgb(245, 67, 63);
+	margin: 15px;
+
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+	flex: 1 0 120px;
+	max-width: 220px;
+}
+
+.flex-outer > li > label + * {
+	flex: 1 0 220px;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+ 
+  letter-spacing: .09em;
+  border-radius: 2px;
+  font-family: jaapokki-regular;
+  text-transform: uppercase;
+}
+
+
+
+.formwrap {
+	border: 4px solid rgb(245, 67, 63);
+	border-radius: 30px;
+	padding: 30px;
+	margin: 80px;
+
 }
 
 h1 {
@@ -25,6 +76,7 @@ h1 {
 	font-size: 65px;
 	margin: 5px 1px;
 	clear: right;
+	letter-spacing: 8px;
 
 	}
 
@@ -32,6 +84,7 @@ p {
 	font-family: jaapokki-regular;
 	font-size: 20px;
 	color: white;
+
 }
 
 
@@ -47,29 +100,7 @@ a:hover {
 
 }
 
-.form {
-	display: block;
-	text-align: center;
-}
 
-form {
-	display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: left;
-}
-
-input {
-	color: green;
-	background-color: black;
-	}
-
-
-
-textarea {
-	background-color: black;
-	color: green;
-	 }
 
 .navbar {
 	text-align: right;
@@ -118,31 +149,99 @@ a {
 
 }
 
-.homeImagesContainer {
+.aboutContainer {
 	display: flex;
 	flex-direction: row;
-
-	height: 250px;
-	justify-content: space-around;
-
-
-
-}
-
-
-
-img {
-	border-radius: 15px;
-	width: 350px;
-	display: inline-block;
+	justify-content: center;
 	border: 5px solid rgb(245, 67, 63);
+	border-radius: 30px;
+	padding: 4px;
+
 }
+
+.aboutbox1 {
+	flex: 1;
+	text-align: left;
+}
+
+.aboutbox2 {
+	flex: 1;
+	text-align: left;
+}
+
+.aboutContainer h2 {
+	font-family: paralines-regular;
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+
+.aboutbox1 li,
+.aboutbox2 li {
+	font-family: jaapokki-regular;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.GoodNeighborStuff {
+	font-family: jaapokki-regular;
+	font-size: 20px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+#goodneighbor:hover {
+	color: rgb(245, 67, 63) ;
+	font-size: 45px;
+	border: 3px dotted white;
+}
+
+@media only screen and (max-width: 2000px) {
+	
+	.homeImagesContainer {
+		display: flex;
+		flex-direction: row;
+
+		height: 250px;
+		justify-content: space-around;
+
+
+
+	}
+
+	img {
+		border-radius: 20px;
+		width: 350px;
+		display: inline-block;
+		border: 5px solid white;
+		box-shadow: 10px 5px 5px rgb(245, 67, 63);
+	}
+
+
+}
+
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+	.homeImagesContainer {
+		display: block;
+	}
+
 	img {
 		width: auto;
 		display: block;
 		margin: 0 auto;
+
+	}
+
+	.navbar li {
+		display: block;
+		text-align: left;
+
 	}
 
 }
